@@ -1,0 +1,31 @@
+:root{
+    --dark: #161910;
+    --darkx: #1e2126;
+    --light: #ffffff;
+}
+
+body{
+    font-weight: 300;
+    color: var(--light);
+}
+
+.bg-dark{
+    background-color: var(--dark) !important;
+}
+
+.bg-dark-x{
+    background-color: var(--darkx) !important;
+}
+
+.form-control, .btn{
+    min-height: 3.125rem;
+    line-height: initial;
+}
+
+#loguito{
+    border-radius: 20%;
+}
+
+#logito{
+    text-align: center;
+}
