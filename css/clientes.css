@@ -114,6 +114,18 @@ article{
     justify-content: center;
 }
 
+.botón{
+    justify-content: center;
+}
+
+button{
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10%;
+}
 /* footer */
 
 footer{
