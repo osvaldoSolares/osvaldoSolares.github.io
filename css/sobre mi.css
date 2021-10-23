@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Rajdhani', sans-serif;
+    /* animation: moverArriba 1s ease-in ; */
 }
 
 .contenedor{
@@ -13,7 +14,7 @@ body{
     max-width: 1200px;
     margin: auto;
     padding: 60px 0;
-    animation: moverArriba 1s ease-in ;
+    animation: aparecer 3s ease-in;
 }
 
 header{
@@ -38,7 +39,7 @@ header{
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    animation: moverArriba 1s ease-in ;
+    animation: aparecer 3s ease-in;
 }
 #espan{
     color: #000;
@@ -56,7 +57,7 @@ nav a{
     margin: auto;
     padding-left: 20px;
     display: inline-block;
-    animation: moverArriba 1s ease-in ;
+    animation: aparecer 3s ease-in;
 }
 nav a:hover{
     color:rgb(150, 150, 150)
@@ -66,6 +67,46 @@ nav a:hover{
     text-align: center;
     color: #fff;;
     font-size: 50px;
+}
+
+/* información */
+
+.tecnologias{
+    font-size: 60px;
+    text-align: center;
+}
+.servicios{
+    font-size: 60px;
+    text-align: center;
+}
+
+.yo{
+    width: 50%;
+        padding: 0 0 0 0;
+        margin: 0;
+        width: 20%;
+        border-radius: 60%;
+        box-shadow: black;
+}
+
+.texto{
+    font-size: xx-large;
+}
+
+main{
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+}
+
+.ofrezco{
+    width: 60%;
+    display: inline-flex;
+}
+
+.ofrezco-2{
+    width: 40%;
+    display: inline-flex;
 }
 
 /* footer */
@@ -164,7 +205,21 @@ footer{
     }
 }
 
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        transform-origin: right;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
 @media screen and (max-width:800px){ 
+
+    /* portada */
+
     .h1{
         font-size: large;
         justify-content: space-evenly;
@@ -178,6 +233,17 @@ footer{
         text-align: center;
     }
 
+    /* información */
+
+    .yo{
+        width: 30%;
+    }
+
+    .texto{
+        font-size: larger;
+    }
+    
+    /* footer */
     .footer-content{
         justify-content: center;
     }
@@ -206,7 +272,18 @@ footer{
     }
 }
 
+
+@media screen and (max-width:500px){
+
+    .herramientas{
+        font-size: medium;
+    }
+
+}
+
 @media screen and (max-width:400px){
+    /* portada */
+
     .h1{
         width: 100vw;
         font-size: medium;
@@ -220,6 +297,14 @@ footer{
     .subtitulo{
         font-size: 15px;
     }
+
+    /* información */
+
+    .herramientas{
+        font-size: small;
+    }
+
+    /* footer */
 
     .social-media{
         width: 100%;
