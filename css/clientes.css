@@ -176,6 +176,10 @@ nav a:hover{
         width: 105%;
     }
 
+    button{
+        cursor: pointer;
+    }
+
 /* footer */
 
 footer{
