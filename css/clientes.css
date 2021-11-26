@@ -103,7 +103,7 @@ nav a:hover{
     left: 0;
     width: 100%;
     height:100%;
-    background: linear-gradient(45deg, #1100a7, #000000);
+    background: linear-gradient(45deg, #1100a7, #0c00b3);
     }
 .container .box::after{
     content: '';
@@ -112,16 +112,16 @@ nav a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #1100a7, #000000);
+    background: linear-gradient(45deg, #1100a7, #0300b8);
     filter: blur(30px);
     }
 .container .box:nth-child(2)::before,
 .container .box:nth-child(2)::after{
-    background: linear-gradient(315deg, #07a501, #000000);
+    background: linear-gradient(315deg, #09ff00, #19a800);
     }
 .container .box:nth-child(3)::before,
 .container .box:nth-child(3)::after{
-    background: linear-gradient(315deg, #b90000, #000000);
+    background: linear-gradient(315deg, #ff0000, #a70000);
     }
 .container .box span{
     position: absolute;
