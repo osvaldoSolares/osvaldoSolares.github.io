@@ -78,19 +78,19 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 10px 0;
     flex-wrap: wrap;
     }
 .container .box{
     position: relative;
-    width: 350px;
+    width: 300px;
     height: 500px;
     color: #fff;
-    background: #111;
+    background: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 30px;
+    margin: 20px 5px;
     transition: 0.5s;
     }
 .container .box:hover{
