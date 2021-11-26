@@ -78,19 +78,19 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 40px 0;
     flex-wrap: wrap;
     }
 .container .box{
     position: relative;
-    width: 300px;
+    width: 350px;
     height: 500px;
     color: #fff;
-    background: rgb(0, 0, 0);
+    background: #111;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 5px;
+    margin: 20px 30px;
     transition: 0.5s;
     }
 .container .box:hover{
@@ -179,6 +179,8 @@ nav a:hover{
     button{
         cursor: pointer;
     }
+
+
 
 /* footer */
 
@@ -393,6 +395,15 @@ footer{
 
     /* información */
 
+    .container{
+        padding: 10px 0;
+    }
+
+    .container .box{
+        width: 300px;
+        margin: 20px 5px;
+    }
+    
     /* footer */
 
     .social-media{
