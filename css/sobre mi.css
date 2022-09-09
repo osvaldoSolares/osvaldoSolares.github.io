@@ -7,7 +7,7 @@
 body{
     font-family: 'Rajdhani', sans-serif;
     /* animation: moverArriba 1s ease-in ; */
-    background: rgb(0, 0, 24);
+    background-color: rgb(0, 0, 0);
     color: #fff;
 }
 
@@ -28,8 +28,41 @@ header{
     background-position: center;
     background-color: rgb(50, 50, 50);
     background-blend-mode: soft-light;
-    color: #fff;
+    color: rgb(255, 255, 255);
+    transition: all .4s ease-in-out;
+    animation: header 20s infinite linear ;
 }
+
+@keyframes header{
+    0%{
+        background-image: url(../imagenes/720s.jpg); 
+    }
+    25%{
+        background-image: url(../imagenes/720s.jpg); 
+    }
+
+    26%{
+        background-image: url(../imagenes/350-z.jpg); 
+    }
+    50%{
+        background-image: url(../imagenes/350-z.jpg); 
+    }
+
+    51%{
+        background-image: url(../imagenes/koegnisegg.jpg); 
+    }
+    75%{
+        background-image: url(../imagenes/koegnisegg.jpg); 
+    }
+    76%{
+        background-image: url(../imagenes/porsche-noche.jpg); 
+    }
+    100%{
+        background-image: url(../imagenes/porsche-noche.jpg); 
+    }
+
+}
+
 
 .h1{
     font-size: 40px;
@@ -41,7 +74,10 @@ header{
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    animation: aparecer 3s ease-in;
+    animation: moverArriba 1s ease-in ;
+    filter:brightness(5.4);
+    filter: drop-shadow(50px 50px 20px rgb(0, 4, 255));
+    text-shadow:0 0 5px rgb(0, 4, 255), 0 0 5px rgb(0, 4, 255);
 }
 #espan{
     color: #000;
@@ -62,7 +98,7 @@ nav a{
     animation: aparecer 3s ease-in;
 }
 nav a:hover{
-    color:rgb(150, 150, 150)
+    color:rgb(0, 4, 255);
 }
 
 .titulo{
@@ -84,11 +120,15 @@ nav a:hover{
 
 .yo{
     width: 50%;
-        padding: 0 0 0 0;
-        margin: 0;
-        width: 20%;
-        border-radius: 60%;
-        box-shadow: black;
+    padding: 0 0 0 0;
+    margin: 0;
+    width: 20%;
+    border-radius: 60%;
+    border: 3.5px solid rgb(0, 4, 255);
+    box-shadow: inset 0 0 5px rgb(0, 4, 255),0 0 rgb(0, 4, 255);
+    filter:brightness(1.4);
+    filter: drop-shadow(16px 16px 20px rgb(0, 4, 255));
+
 }
 
 .texto{
@@ -102,9 +142,14 @@ main{
 }
 
 .galeria{
-    /* background: #1c03ff15; */
-    background: linear-gradient(45deg, #140599, #000);
-    /* filter: blur(30px); */
+    background-color: #111;
+    width: 75%;
+    margin: auto;
+    border-radius: 1%;
+    border: 3.5px solid rgb(0, 4, 255);
+    box-shadow: inset 0 0 5px rgb(0, 4, 255),0 0 rgb(0, 4, 255);
+    filter:brightness(1.4);
+    filter: drop-shadow(16px 16px 20px rgb(0, 4, 255));
 }
 
 .contenedor-galeria{
@@ -165,7 +210,10 @@ main{
 /* FOOTER */
 
 footer{
-    background: #000;
+    background:linear-gradient(#000, #000, #000, #000, #000, rgb(0, 4, 255));
+    box-shadow: inset 0 0 5px rgb(0, 4, 255),0 0 rgb(0, 4, 255);
+    border: 3.5px solid rgb(0, 4, 255);
+    border-radius: 1%;
     padding-bottom: 0.1px;
 }
 
@@ -186,6 +234,9 @@ footer{
 .brand{
     font-weight: 500;
     font-size: 40px;
+    filter:brightness(8.4);
+    text-shadow:0 0 5px rgb(0, 4, 255), 0 0 5px rgb(0, 4, 255);
+    color: rgb(0, 4, 255);
 }
 
 .brand+p{
@@ -218,6 +269,16 @@ footer{
     text-align: center;
     color: #fff;
 }
+.social-media-icon-3{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
 
 .social-media-icon-1:hover{
     background: blue;
@@ -227,12 +288,20 @@ footer{
     background: #fff;
     color: rgb(218, 0, 116);
 }
+.social-media-icon-3:hover{
+    background: rgb(0, 223, 37);
+    color: rgb(255, 255, 255);
+}
 
 .social-media-icon-1 i{
     font-size: 30px;
     line-height: 60px;
 }
 .social-media-icon-2 i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.social-media-icon-3 i{
     font-size: 30px;
     line-height: 60px;
 }
