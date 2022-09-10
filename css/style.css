@@ -401,9 +401,17 @@ footer{
 
     /* información */
 
-    .tecs{
-        width: 35%;
+    .herramientas{
+        margin: 2px;
     }
+
+     .tecs{
+        width: 48%;
+    } 
+
+    /* .bx{
+        width: 100px;
+    } */
 
     /* footer */
 
